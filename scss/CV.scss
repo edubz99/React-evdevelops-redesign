@@ -1,0 +1,35 @@
+.cv {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2em 1em;
+  .skills,
+  .roles,
+  .tools {
+    max-width: 320px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    padding: 0 1em;
+    border-radius: 5px;
+    p {
+      font-weight: 200;
+    }
+    &__list {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin-bottom: 0.8em;
+        font-weight: 100;
+        color: #333;
+      }
+    }
+  }
+}
+
+.icon {
+  margin-top: 0.5em;
+  font-size: 3em;
+}

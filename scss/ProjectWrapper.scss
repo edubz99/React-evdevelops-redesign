@@ -1,0 +1,15 @@
+.project-summary {
+  font-weight: 200;
+  line-height: 1.5em;
+}
+.project-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.projects-wrapper {
+  margin: 1em 0;
+  padding: 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

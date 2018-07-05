@@ -1,0 +1,69 @@
+.project {
+  min-width: 320px;
+  max-width: 400px;
+  margin: 1em;
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #33333320;
+  &:hover .project__image--overlay {
+    opacity: 1;
+    border: none;
+  }
+  &:hover .project__image {
+    transform: scale(100%);
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    transform: scale(95%);
+    &--overlay {
+      display: flex;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease-in-out;
+      background-color: #293347;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+}
+
+.overlay-inner {
+  font-size: 0.8em;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  padding: 0.5em;
+  &__para {
+    margin: 0.5em;
+    flex: 1 1 100%;
+  }
+  &__button {
+    margin-top: 1em;
+    background: #000;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+}
