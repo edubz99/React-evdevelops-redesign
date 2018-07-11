@@ -1,34 +1,98 @@
+$mainmargin: 2em;
+$mainColor: #0facf3;
+
+.contact-wrapper {
+  padding: 1em;
+}
 .contact {
   max-width: 600px;
-  margin: 4em auto 2em auto;
+  margin: 0 auto;
   &__title {
-    margin-bottom: 1em;
+    font-size: 2.5em;
   }
   &__para {
     font-weight: 300;
     line-height: 1.5em;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
     &--link {
-      text-decoration-style: double;
-      color: black;
-      text-decoration-color: #333;
+      color: #0facf380;
+      text-decoration: none;
+      box-shadow: 0 1px 0 0 #0facf350;
+      transition: all 0.2s ease-in-out;
       &:hover {
-        color: rgb(77, 74, 74);
+        color: $mainColor;
+        box-shadow: 0 1px 0 0 $mainColor;
       }
     }
   }
-  &__button {
-    margin: 2em auto 3em auto;
-    font-size: 1.3em;
-    padding: 0.5em 1em;
-    border-radius: 50px;
-    background: transparent;
-    border: 2px solid rgba(0, 0, 0, 255);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      background: #000;
-      color: #fff;
+  &__form {
+    p {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+    }
+    input,
+    textarea {
+      outline: none;
+      background: transparent;
+      padding: 1rem 1rem 1rem 0;
+      font-size: 0.8rem;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      color: #767676;
+    }
+    input {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      &:focus {
+        border: 2px solid $mainColor;
+        padding-left: 1rem;
+      }
+    }
+    textarea {
+      padding: 1rem;
+      border: none;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+      &:focus {
+        border: 2px solid $mainColor;
+        box-shadow: none;
+      }
+    }
+
+    button {
+      margin: $mainmargin auto $mainmargin auto;
+      font-size: 1.3em;
+      padding: 0.5em 2em;
+      border-radius: 50px;
+      background: transparent;
+      border: 2px solid $mainColor;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      transform: scale(0.95);
+      &:hover {
+        background: $mainColor;
+        color: #fff;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    &__title {
+      font-size: 2em;
+      padding-top: 0;
+    }
+    &__form {
+      button {
+        font-size: 1em;
+      }
+    }
+    &__para {
+      padding-bottom: 1em;
+      margin: 0 2em;
     }
   }
 }

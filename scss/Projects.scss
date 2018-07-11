@@ -1,3 +1,4 @@
+$mainColor: #0facf3;
 .project {
   min-width: 320px;
   max-width: 400px;
@@ -31,7 +32,7 @@
       width: 100%;
       opacity: 0;
       transition: 0.5s ease-in-out;
-      background-color: #293347;
+      background-color: $mainColor;
       border-radius: 5px;
       border: none;
     }
@@ -50,9 +51,11 @@
   &__para {
     margin: 0.5em;
     flex: 1 1 100%;
+    color: #fff;
   }
   &__button {
     margin-top: 1em;
+    text-decoration: none;
     background: #000;
     color: #fff;
     padding: 0.5em 1em;
@@ -65,5 +68,13 @@
       background: #fff;
       color: #000;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project {
+    min-width: 320px;
+    max-width: 350px;
+    margin: 0.5em;
   }
 }

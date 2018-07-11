@@ -1,15 +1,39 @@
+$mainColor: #0facf3;
+
 .project-summary {
   font-weight: 200;
   line-height: 1.5em;
+  padding: 0 2em 2em 2em;
+  &__link {
+    color: #0facf380;
+    text-decoration: none;
+    box-shadow: 0 1px 0 0 #0facf350;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: $mainColor;
+      box-shadow: 0 1px 0 0 $mainColor;
+    }
+  }
 }
 .project-container {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 .projects-wrapper {
-  margin: 1em 0;
   padding: 0 1em;
+  margin: 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.project-title {
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-summary {
+    padding-bottom: 0;
+  }
+  .project-title {
+    font-size: 2em;
+  }
 }

@@ -1,12 +1,7 @@
 import React from 'react';
-import '../scss/Nav.scss'
-
-
-const scrolledNav = (e) => {
-    console.log(e);
-}
-
+import '../scss/Nav.scss';
 const Nav = () => {
+    
     return (
         <div>
           <nav className="navigation">
@@ -16,7 +11,9 @@ const Nav = () => {
               </div>
 
               <div className="navigation__position-right">
-                 <button className="navigation__position-right--hello-button">Say Hello</button>
+              <a href="#contact"><button id="button" className="navigation__position-right--hello-button">
+                     Say Hello
+                 </button></a>
               </div>
 
           </nav>

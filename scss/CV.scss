@@ -1,8 +1,10 @@
+@import "./App.scss";
+
 .cv {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 2em 1em;
+  margin: 0 1em;
   .skills,
   .roles,
   .tools {
@@ -23,7 +25,6 @@
       li {
         margin-bottom: 0.8em;
         font-weight: 100;
-        color: #333;
       }
     }
   }
@@ -32,4 +33,18 @@
 .icon {
   margin-top: 0.5em;
   font-size: 3em;
+  // color: $mainBlue;
+}
+
+@media only screen and (max-width: 600px) {
+  .skills,
+  .tools,
+  .roles {
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+  .icon {
+    font-size: 2em;
+  }
 }

@@ -8,7 +8,6 @@ import ProjectWrapper from './ProjectWrapper';
 import Projects, {ProjectProps} from './Projects';
 import Contact from './Contact';
 
-
 class App extends Component {
   render() {
     return (
@@ -21,7 +20,7 @@ class App extends Component {
             {/* Map through  */}
               {ProjectProps.map((props, i) => <Projects key={i} {...props} />)}
             </ProjectWrapper>
-            <Contact />
+            <Contact/>
           </Scroll>
       </div>
     );

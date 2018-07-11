@@ -5,6 +5,7 @@ import FaCodeFork from 'react-icons/lib/fa/code-fork';
 import FaBriefcase from 'react-icons/lib/fa/briefcase';
 const CV = () => {
     return (
+        <div className="section-wrapper">
         <div className="cv">
             <div className="skills">
                 <FaCode className="icon"/>
@@ -50,6 +51,7 @@ const CV = () => {
                     <li>Sunmaia Internet Ltd - Junior Web Developer - <span>May 2014 - October 2014</span></li>
                 </ul>
             </div>
+        </div>
         </div>
     )
 }

@@ -1,5 +1,7 @@
+$mainColor: #0facf3;
+
 .navigation {
-  height: 150px;
+  height: 80px;
   width: 100%;
   color: #333;
   display: flex;
@@ -7,6 +9,8 @@
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
   line-height: 150px;
   transition: line-height 0.5s;
+  position: relative;
+  z-index: 1;
   &__position-left {
     flex: 1;
     display: flex;
@@ -31,12 +35,18 @@
       border-radius: 50px;
       outline: none;
       background: transparent;
-      border: 2px solid rgba(0, 0, 0, 255);
+      border: 2px solid $mainColor;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      transform: scale(0.95);
       &:hover {
-        background: #000;
+        background: $mainColor;
         color: #fff;
+        transform: scale(1);
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
       }
     }
   }
@@ -52,6 +62,18 @@
     &__position-right {
       margin: 0;
       justify-content: center;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navigation {
+    &__position-right--hello-button {
+      font-size: 1em;
+    }
+    &__position-left {
+      font-size: 0.8em;
     }
   }
 }

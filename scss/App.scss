@@ -1,3 +1,9 @@
+$mainPadding: 2em;
+$textPadding: 0.5em;
+$mainColor: #0facf3;
+$textColor: #3c4146;
+$secondaryTextColor: #767676;
+
 html {
   box-sizing: border-box;
 }
@@ -7,11 +13,21 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.section-wrapper {
+  padding: $mainPadding 0;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  &:last-child {
+    border-bottom: none;
+  }
+}
 body {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif !important;
   background-color: #fff;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   min-width: 310px;
 }
 .Wrapper {
@@ -20,4 +36,49 @@ body {
 
 .App-title {
   font-size: 1.5em;
+}
+
+.icon {
+  color: $mainColor;
+}
+
+h1 {
+  color: $mainColor;
+  padding: $textPadding;
+  margin: 0;
+  font-weight: 400;
+}
+h2 {
+  color: $textColor;
+  font-weight: 300;
+}
+
+p,
+li {
+  color: $secondaryTextColor;
+  line-height: 1.5em;
+}
+p {
+  font-size: 1.1em;
+}
+
+a,
+button {
+  color: $mainColor;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-wrapper {
+    padding: 1em 0;
+  }
+  p,
+  li {
+    line-height: 1.2em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  li {
+    font-size: 0.9em;
+  }
 }
