@@ -10,7 +10,7 @@ const About = () => {
                 <h1 className="landing__title">Front-end Developer</h1>
                 <p className="landing__sub-title"><FaQuoteLeft  className="landing__sub-title--quote-icons"/> I code beautiful simple things and  I love it.<FaQuoteRight className="landing__sub-title--quote-icons"/></p>
                 <div className="landing__image">
-                    <img className="landing__image--profImage" src="https://evdevelops.com/Images/profImage.jpg"  alt="Profile"/>
+                    <img className="landing__image--profImage" src={require('../media/images/profImage.jpg')}  alt="Profile"/>
                 </div>
             </div>
             <div className="about">
