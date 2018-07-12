@@ -29,14 +29,18 @@ $mainColor: #0facf3;
     p {
       display: flex;
       flex-direction: column;
-      margin: 1rem;
+      margin: 1em;
     }
     input,
     textarea {
+      font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+        "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif !important;
       outline: none;
       background: transparent;
-      padding: 1rem 1rem 1rem 0;
-      font-size: 0.8rem;
+      padding: 1em 1em 1em 0;
+      font-size: 0.9em;
+      line-height: 1.5em;
+      font-weight: 300;
       border: 1px solid rgba(0, 0, 0, 0.2);
       color: #767676;
     }
@@ -46,11 +50,11 @@ $mainColor: #0facf3;
       border-left: none;
       &:focus {
         border: 2px solid $mainColor;
-        padding-left: 1rem;
+        padding-left: 1em;
       }
     }
     textarea {
-      padding: 1rem;
+      padding: 1em;
       border: none;
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
       &:focus {

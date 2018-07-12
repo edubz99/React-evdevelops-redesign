@@ -7,6 +7,7 @@ import CV from './CV';
 import ProjectWrapper from './ProjectWrapper';
 import Projects, {ProjectProps} from './Projects';
 import Contact from './Contact';
+import Footer  from './Footer';
 
 class App extends Component {
   render() {
@@ -20,7 +21,8 @@ class App extends Component {
             {/* Map through  */}
               {ProjectProps.map((props, i) => <Projects key={i} {...props} />)}
             </ProjectWrapper>
-            <Contact/>
+            <Contact />
+            <Footer />
           </Scroll>
       </div>
     );

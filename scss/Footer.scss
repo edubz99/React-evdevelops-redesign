@@ -1,0 +1,27 @@
+$mainColor: #0facf3;
+
+.footer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1em;
+  &__logo {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+  }
+  &__title {
+    color: $mainColor;
+  }
+  &__social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+
+    &--link {
+      flex: 1;
+      margin: 1em;
+    }
+  }
+}
