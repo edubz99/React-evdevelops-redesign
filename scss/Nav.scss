@@ -15,7 +15,7 @@ $mainColor: #0facf3;
     flex: 1;
     display: flex;
     justify-content: flex-start;
-    padding-left: 5em;
+    padding-left: 2em;
     h1 {
       margin: 0;
       font-size: 2em;
@@ -27,7 +27,7 @@ $mainColor: #0facf3;
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    padding-right: 5em;
+    padding-right: 2em;
 
     &--hello-button {
       font-size: 1.3em;
