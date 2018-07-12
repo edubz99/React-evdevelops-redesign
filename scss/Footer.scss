@@ -4,6 +4,8 @@ $mainColor: #0facf3;
   max-width: 600px;
   margin: 0 auto;
   padding: 0 1em;
+  display: flex;
+  flex-direction: column;
   &__logo {
     margin: 0;
     font-size: 2em;
@@ -16,12 +18,36 @@ $mainColor: #0facf3;
   &__social-list {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
+    margin: 1em auto;
     display: flex;
 
-    &--link {
-      flex: 1;
-      margin: 1em;
+    &--link a {
+      font-size: 1.5em;
+      padding: 1em;
+      color: #0facf380;
+      transition: all 0.2s ease-in-out;
+      transform: scale(0.95);
+      &:hover {
+        color: $mainColor;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    &__title {
+      font-size: 1em;
+    }
+    &__logo {
+      font-size: 1.6em;
+    }
+    &__social-list {
+      &--link {
+        font-size: 1em;
+        padding: 1em;
+      }
     }
   }
 }

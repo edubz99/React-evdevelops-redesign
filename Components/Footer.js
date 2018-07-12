@@ -3,6 +3,7 @@ import '../scss/Footer.scss';
 import FaIstagram from 'react-icons/lib/fa/instagram';
 import FaTwitter from 'react-icons/lib/fa/twitter';
 import FaGithub from 'react-icons/lib/fa/github';
+import FaCodepen from 'react-icons/lib/fa/codepen';
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
                 <h2 className="footer__title">Living, learning, & prosper each day at a time.</h2>
                <ul className="footer__social-list">
                     <li className="footer__social-list--link">
-                        <a href="https://www.instagram.com/evnz_" target="_blank" title="Follow me on Instagram">
+                        <a href="https://www.instagram.com/evnz__" target="_blank" title="Follow me on Instagram">
                         <FaIstagram/>
                         </a>
                     </li>
@@ -26,8 +27,12 @@ const Footer = () => {
                         <FaGithub/>
                         </a>
                     </li>
-                    <li className="footer__social-list--link"></li>
-                    <li className="footer__social-list--link"></li>
+                    <li className="footer__social-list--link">
+                        <a href="https://codepen.io/edubz99/" target="_blank">
+                        <FaCodepen/>
+                        </a>
+                    
+                    </li>
                </ul>
             </div>
         </div>
