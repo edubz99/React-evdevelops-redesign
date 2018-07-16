@@ -1,21 +1,23 @@
 $mainColor: #0facf3;
-
 .navigation {
+  padding: 0 2em;
   height: 80px;
   width: 100%;
   color: #333;
   display: flex;
   place-items: center;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
-  line-height: 150px;
   transition: line-height 0.5s;
-  position: relative;
+  position: fixed;
   z-index: 1;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+
   &__position-left {
     flex: 1;
     display: flex;
     justify-content: flex-start;
-    padding-left: 2em;
     h1 {
       margin: 0;
       font-size: 2em;
@@ -27,7 +29,6 @@ $mainColor: #0facf3;
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    padding-right: 2em;
 
     &--hello-button {
       font-size: 1.3em;
@@ -58,9 +59,9 @@ $mainColor: #0facf3;
 
 @media (max-width: 500px) {
   .navigation {
+    padding: 0;
     &__position-left,
     &__position-right {
-      margin: 0;
       justify-content: center;
     }
   }

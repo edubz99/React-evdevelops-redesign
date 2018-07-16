@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../scss/App.scss';
 import Nav from './Nav';
 import About from './About';
-import Scroll from './Scroll';
+import Wrapper from './Wrapper';
 import CV from './CV';
 import ProjectWrapper from './ProjectWrapper';
 import Projects, {ProjectProps} from './Projects';
@@ -12,9 +12,9 @@ import Footer  from './Footer';
 class App extends Component {
   render() {
     return (
-      <div className="Wrapper">
+      <div>
           <Nav />
-          <Scroll>
+          <Wrapper>
             <About />
             <CV />
             <ProjectWrapper>
@@ -23,7 +23,7 @@ class App extends Component {
             </ProjectWrapper>
             <Contact />
             <Footer />
-          </Scroll>
+          </Wrapper>
       </div>
     );
   }
