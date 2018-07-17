@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import '../scss/Contact.scss'
-import base from '../base'
+import '../scss/Contact.scss';
+import base from '../base';
+
+import { Input, TextArea, Button } from './FormComponents';
 
 
 class Contact extends Component {
@@ -58,19 +60,20 @@ class Contact extends Component {
                         </p>
                             <form ref={(form) => this.contactForm = form} className="contact__form" onSubmit={this.createMessage}>
                                 <p>
-                                    <input ref={(input) => this.name = input} type="text" name="name" id="name" placeholder="Name" required/>
+                                <Input type="text" value="name" classvalue="contact__form--input"/>
                                 </p>
                                 <p>
-                                    <input ref={(input) => this.email = input} type="email" name="email" id="email" placeholder="Email Address" className="contact__form--input" required/>
+                                    <Input type="email" value="email" classvalue="contact__form--input"/>
                                 </p>
                                 <p>
-                                    <input ref={(input) => this.phone = input} type="number" name="phone" id="phone" placeholder="Phone Number " className="contact__form--input" required/>
+                                    <Input type="number" value="phone" classvalue="contact__form--input"/>
                                 </p>
                                 <p>
-                                    <textarea ref={(input) => this.descr = input} name="descr" id="textarea" cols="30" rows="6" placeholder="Tell me about your project... what is it? Why are you doing it? What do you hope to accomplish? How can I help? " className="contact__form--text-area" required></textarea>
-                            </p>
-                            <p>
-                                    <button className="contact__button">Submit </button>
+                                    <TextArea value="descr" classvalue="contact__form--text-area" cols="30" rows="6" placeholder="Tell me about your project... what is it? Why are you doing it? What do you hope to accomplish? How can I help?"/>
+                                </p>
+                                <p>
+                                    <Button classvalue="contact__button"  value="Submit"/>
+                                 
                                 </p>
 
                             </form>

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../scss/Nav.scss';
+import { Button } from './FormComponents';
+
 const Nav = () => {
     
     return (
@@ -11,9 +13,9 @@ const Nav = () => {
               </div>
 
               <div className="navigation__position-right">
-              <a href="#contact"><button id="button" className="navigation__position-right--hello-button">
-                     Say Hello
-                 </button></a>
+              <a href="#contact">
+                 <Button classvalue="navigation__position-right--hello-button"  value="Say Hello"/>
+                </a>
               </div>
 
           </nav>
