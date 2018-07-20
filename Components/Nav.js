@@ -2,14 +2,23 @@ import React from 'react';
 import '../scss/Nav.scss';
 import { Button } from './FormComponents';
 
-const Nav = () => {
+
+export const Logo = ({ value }) => {
+    return (
+        <h1 className="logo">{value}</h1>
+    )
+} 
+
+
+
+export const Nav = () => {
     
     return (
         <div>
           <nav className="navigation">
 
               <div className="navigation__position-left">
-                    <h1>ev-devz</h1>
+                   <Logo value={"ev-devz"}/> 
               </div>
 
               <div className="navigation__position-right">
@@ -22,5 +31,3 @@ const Nav = () => {
         </div>
     )
 }
-
-export default Nav;

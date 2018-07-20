@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../scss/App.scss';
-import Nav from './Nav';
+import { Nav } from './Nav';
 import About from './About';
 import Wrapper from './Wrapper';
 import CV from './CV';
@@ -21,8 +21,8 @@ class App extends Component {
             {/* Map through  */}
               {ProjectProps.map((props, i) => <Projects key={i} {...props} />)}
             </ProjectWrapper>
-            <Contact />
-            <Footer />
+            <Contact contactTitle={"Let's Connect"}/>
+            <Footer footerTitle={"Living, learning, & prosper each day at a time."}/>
           </Wrapper>
       </div>
     );

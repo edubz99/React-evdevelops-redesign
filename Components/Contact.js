@@ -48,15 +48,13 @@ class Contact extends Component {
     }
 
     
-
-    
     render() {
         return (
             <div className="section-wrapper">
                 <div className="contact-wrapper" id="contact">
                     <div className="contact">
-                        <h1 className="contact__title">Let's Connect</h1>
-                        <p className="contact__para"> Wanna get in touch or talk about any projects? Please feel free to complete the form below or contact me via email at <a className="contact__para--link" href="mailto:dubv5@hotmail.co.uk">dubv5@hotmail.co.uk</a>
+                        <h1 className="contact__title">{this.props.contactTitle}</h1>
+                        <p className="contact__para">Wanna get in touch or talk about any projects? Please feel free to complete the form below or contact me via email at <a className="contact__para--link" href="mailto:dubv5@hotmail.co.uk">dubv5@hotmail.co.uk</a>
                         </p>
                             <form ref={(form) => this.contactForm = form} className="contact__form" onSubmit={this.createMessage}>
                                 <p>

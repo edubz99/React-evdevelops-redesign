@@ -1,17 +1,21 @@
 import React from 'react';
 import '../scss/Footer.scss';
+import '../scss/Nav.scss';
+import { Logo } from './Nav';
 import FaIstagram from 'react-icons/lib/fa/instagram';
 import FaTwitter from 'react-icons/lib/fa/twitter';
 import FaGithub from 'react-icons/lib/fa/github';
 import FaCodepen from 'react-icons/lib/fa/codepen';
 import Social from './Social';
 
-const Footer = () => {
+
+
+export const Footer = ({ footerTitle  }) => {
     return (
         <div className="section-wrapper">
             <div className="footer">
-                <h1 className="footer__logo">ev-devz</h1>
-                <h2 className="footer__title">Living, learning, & prosper each day at a time.</h2>
+                <Logo value={"ev-devz"}/> 
+                <h2 className="footer__title">{footerTitle}</h2>
                <ul className="footer__social-list">
 
                     <Social  url={"https://www.instagram.com/evnz__"} comment={"Follow me on Instagram"} icon={<FaIstagram />}/>

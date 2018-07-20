@@ -18,12 +18,6 @@ $mainColor: #0facf3;
     flex: 1;
     display: flex;
     justify-content: flex-start;
-    h1 {
-      margin: 0;
-      font-size: 2em;
-      font-weight: 200;
-      letter-spacing: 0.1em;
-    }
   }
   &__position-right {
     flex: 1;
@@ -51,6 +45,12 @@ $mainColor: #0facf3;
       }
     }
   }
+}
+.logo {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
 }
 .scrolled-nav {
   height: 60px !important;
