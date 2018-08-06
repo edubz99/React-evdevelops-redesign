@@ -37,13 +37,11 @@ export const Skills = () => {
                 <ListItem name={"CSS with (BEM - CSS Architecture)"} />
                 <ListItem name={"JavaScript"} />
                 <ListItem name={"SASS"} />
-                <ListItem name={"Webpack"} />
-            </List>
-            <Brief title={""} sentence={"I tend to code things from scratch, and enjoy bringing ideas to life in the browser."}/>
-            <List>
                 <ListItem name={"React"} /> 
+                <ListItem name={"Webpack"} />
                 <ListItem name={"Gulp"} />
             </List>
+    
         </div>
     )
 }
@@ -52,7 +50,7 @@ export const DevTools = () => {
     return (
         <div className="cv__section">
          <FaCodeFork className="icon"/>
-        <Brief title={"Dev Tools"} sentence={"These are the tools I currently use to enable me accomplish my tasks"}/>
+        <Brief title={"Dev Tools"} sentence={"These are the tools I currently use to enable me to accomplish my tasks"}/>
         <List>
            <ListItem name={"Github"} />
            <ListItem name={"Bootstrap"} />
