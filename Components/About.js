@@ -15,7 +15,7 @@ const About = () => {
             </div>
             <div className="about">
                     <h2 className="about__title">Hi, I'm Evans. Nice to meet you.</h2>
-                    <p className="about__brief"> I'm a Front-end Developer with a history of working in the logistics and supply chain industry. I'm current freelancing as Front-end developer,developing in JavaScript ES6+, HTML, CSS, SASS, Webpack and some React.</p>
+                    <p className="about__brief"> I'm a Front-end Developer with a history of working in the logistics and supply chain industries. I'm current freelancing as Front-end developer,developing in JavaScript ES6+, HTML, CSS, SASS, Webpack and some React.</p>
             </div>
         </div>
     )
